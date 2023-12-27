@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Vinicius F. da Silva</title>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+    
+    body{
+      font-family: 'Quattrocento', Georgia, Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(250, 247, 247);
+      color: #333;
+    }
+
+    .text {
+      font-family: 'Quattrocento', Georgia, Times, serif;
+      margin: 0;
+      padding: 0;
+      color: #585858;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding-right: 1px;
+      padding-left: 1px;
+      padding-top: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(71, 67, 67, 0.1);
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+    .project {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+    .project p {
+      font-size: 1em;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section:last-child {
+      margin-bottom: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+    }
+    
+    .circle-photo {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+      margin-right: 18px; /* Adiciona margem entre a imagem e o texto */
+      float: left; /* Faz a imagem ficar à esquerda */
+    }
+
+    .circle-photo img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #534f4f; /* Background color for the navbar */
+    }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between navbar items */
+  }
+
+  .navlist {
+    color: white; /* Text color for the navbar items */
+    text-decoration: none;
+    padding: 10px 30px; /* Adjust padding for the navbar items */
+  }
+
+  #maintext {
+      overflow: hidden; /* Limpa o float e mantém o texto ao lado */
+    }
+  #maintext h1 {
+    margin-top: 0;
+    margin-bottom: 5px; /* Adiciona alguma margem abaixo do título */
+  }
+
+</style>
+</head>
+<body>
+
+
+  <div class="container">
+    
+    <header>
+      <center><a href="/research/" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
+    </header>
+
+    <nav>
+        <center>
+          <ul>
+            <li><a class="navlist text" style="font-size: 20px" href="./researches.html">Researches</a></li>
+            <li><a class="navlist text" style="font-size: 20px" href="./teaching.html">Teaching</a></li>
+            <li><a class="navlist text" style="font-size: 20px" href="./projects.html">Projects</a></li>
+            <li><a class="navlist text" style="font-size: 20px" target="_blank" href="https://silvavinicius.com.br/resume/vinicius.pdf">CV</a></li>
+            <li><a class="navlist text" style="font-size: 20px" href="./contact.html">Contact</a></li>
+          </ul>
+      </center>
+      </nav>
+    <br/>
+
+    <section id="photo">
+      <div style="padding: 15px;">
+        <div id="photo" class="circle-photo"><img src="vinicius.jpeg" alt=""></div>
+        <div class="text" id="maintext"><center><span style="font-size: 33px;">I am a Operating Systems Researcher</span></center></div>
+      </div>
+    </section>
+
+    <section>
+        <span class="text" style="font-size: 25px;">Undergraduate projects & Memberships</span><br/><br/>
+        <br/><br/>
+        <div class="project">
+            <h3 class="text">Undergraduate Thesis - <a href="https://icei.pucminas.br">ICEI</a> - <a href="https://www.pucminas.br/destaques/">PUCMINAS</a></h3>
+            <p style="text-align: justify; text-justify: inter-word;">My undergraduate thesis proposes a kernel-bypass device that implements a communication abstraction between processes using the zero-copy technique, involving direct data transfer between processes in a microkernel architecture, removing context switches and intermediate copies that cause overhead.</p> 
+            <p>• Advisor 1: <a href="https://www.microsoft.com/en-us/research/people/ppenna/" style="color: blue">Pedro Henrique Penna</a></p>
+            <p>• Advisor 2: <a href="https://www.cart-research.com/team/henrique" style="color: blue">Henrique Cota de Freitas</a></p>
+        </div>
+        
+        <div class="project">
+            <h3 class="text">Researcher in Compilers and Operating System at <a href="https://github.com/nanvix">Nanvix</a></h3>
+            <p style="text-align: justify; text-justify: inter-word;">Virtual Machine develop using C and C++ languanges. Nanvix VM decode a MIPS and ARM assembly, translate to RISC-V Assembly and run in a manycore processor!</p>
+            <p style="text-align: justify; text-justify: inter-word;">As a researcher with expertise in Compilers and Operating Systems at Nanvix, my focus lies in
+                the advancement of a virtual machine project. This undertaking centers on the development
+                of a Just-In-Time translation engine within the Nanvix emulator’s operating system. Aiming
+                to enhance emulation efficiency, my role encompasses the creation of this engine using
+                C and C++ programming languages. Its primary function is the real-time translation of
+                assembly instructions, transitioning from the MIPS architecture to the RISC-V processor, thus
+                contributing to the optimization of the Nanvix emulator’s performance.</p>
+            
+            <p>• Advisor: <a href="https://www.microsoft.com/en-us/research/people/ppenna/" style="color: blue">Pedro Henrique Penna</a></p>
+            <p>• Document: <a href="https://silvavinicius.com.br/resume/letter_of_recommendation.pdf" style="color: blue">link</a></p>
+        </div>
+
+        <div class="project">
+          <h3 class="text">PIBIC/CNPQ Researcher at Programa de Pós-Graduação em Odontologia - <a href="https://icbs.pucminas.br/">ICBS</a> - <a href="https://www.pucminas.br/destaques/">PUCMINAS</a></h3>
+          <p style="text-align: justify; text-justify: inter-word;">I have worked as an Android application developer, using Java and Kotlin programming
+            languages, as part of a scientific initiation for the postgraduate program in dentistry.</p>
+            <p>• Advisor: Rodrigo Villamarim Soares</p>
+            <p>• Document: <a href="https://silvavinicius.com.br/resume/researcher_ppgo.pdf" style="color: blue">link</a></p>
+        </div>
+
+        <div class="project">
+            <h3 class="text">IEEE Computer Society Membership - <a href="https://www.computer.org">IEEE ICS</a></h3>
+			<br/>
+			<img src="https://upload.wikimedia.org/wikipedia/en/4/47/IEEE_Computer.png" alt="some text" width=170 height=60>           
+        	<p>• Document: <a href="https://silvavinicius.com.br/resume/IEE_CS.pdf" style="color: blue">link</a></p>
+        </div>
+
+        <div class="project">
+            <h3 class="text">Institute of Electrical and Electronics Engineers Membership - <a href="https://www.ieee.org">IEEE</a></h3>
+			<br/>
+       		<img src="https://www.dataprivacybr.org/wp-content/uploads/2022/10/ieee-1.png" alt="some text" width=90 height=100>           
+        	<p>• Document: <a href="https://silvavinicius.com.br/resume/IEE.pdf" style="color: blue">link</a></p>
+        </div>
+
+        <div class="project">
+            <h3 class="text">Brazilian Computer Society Membership - <a href="https://www.sbc.org.br">SBC</a></h3>
+        	<br/>
+        	<img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Logo_SBC_Transparente.jpeg" alt="some text" width=70 height=95>           
+        	<p>• Document: <a href="https://silvavinicius.com.br/resume/sbc.pdf" style="color: blue">link</a></p>
+	</div>
+
+        <div class="project">
+            <h3 class="text">Association for Computing Machinery Membership - <a href="https://www.acm.org/">ACM</a></h3>
+                <br/>
+        	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg" alt="some text" width=95 height=95>
+        	<p>• Document: <a href="https://silvavinicius.com.br/resume/acm.pdf" style="color: blue">link</a></p>
+	</div>
+    </section>
+</body>
+
+<footer>
+  <p>&copy; <script type = "text/javascript">
+      var dt = new Date();
+      document.write(dt.getFullYear()); 
+   </script> Vinicius Francisco da Silva</p>
+</footer>
+</html>

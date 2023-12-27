@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Vinicius F. da Silva</title>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+    
+    body{
+      font-family: 'Quattrocento', Georgia, Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(250, 247, 247);
+      color: #333;
+    }
+
+    .text {
+      font-family: 'Quattrocento', Georgia, Times, serif;
+      margin: 0;
+      padding: 0;
+      color: #585858;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding-right: 1px;
+      padding-left: 1px;
+      padding-top: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(71, 67, 67, 0.1);
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+    .project {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+    .project p {
+      font-size: 1em;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section:last-child {
+      margin-bottom: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+    }
+    
+    .circle-photo {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+      margin-right: 18px; /* Adiciona margem entre a imagem e o texto */
+      float: left; /* Faz a imagem ficar à esquerda */
+    }
+
+    .circle-photo img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #534f4f; /* Background color for the navbar */
+    }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between navbar items */
+  }
+
+  .navlist {
+    color: white; /* Text color for the navbar items */
+    text-decoration: none;
+    padding: 10px 30px; /* Adjust padding for the navbar items */
+  }
+
+  #maintext {
+      overflow: hidden; /* Limpa o float e mantém o texto ao lado */
+    }
+  #maintext h1 {
+    margin-top: 0;
+    margin-bottom: 5px; /* Adiciona alguma margem abaixo do título */
+  }
+
+</style>
+</head>
+<body>
+
+
+  <div class="container">
+    
+    <header>
+      <center><a href="/research/" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
+    </header>
+
+    <nav>
+      <center>
+        <ul>
+          <li><a class="navlist text" style="font-size: 20px" href="./researches.html">Researches</a></li>
+          <li><a class="navlist text" style="font-size: 20px" href="./teaching.html">Teaching</a></li>
+          <li><a class="navlist text" style="font-size: 20px" href="./projects.html">Projects</a></li>
+          <li><a class="navlist text" style="font-size: 20px" target="_blank" href="https://silvavinicius.com.br/resume/vinicius.pdf">CV</a></li>
+          <li><a class="navlist text" style="font-size: 20px" href="./contact.html">Contact</a></li>
+        </ul>
+    </center>
+    </nav>
+    <br/>
+
+     <section id="photo">
+      <div style="padding: 15px;">
+        <div id="photo" class="circle-photo"><img src="vinicius.jpeg" alt=""></div>
+        <div class="text" id="maintext"><center><span style="font-size: 33px;">I am a Operating Systems Researcher</span></center></div>
+      </div>
+    </section>
+    
+
+    <section id="sobre">
+      <span class="text" style="font-size: 25px; text-align: justify; text-justify: inter-word;">My research focuses on kernel-bypass devices through zero-copy abstractions for communication processing in microkernel operating systems.</span>
+      <p style="text-align: justify; text-justify: inter-word;">I've got a solid two years of experience under my belt as an compilers and operating systems researcher. I possess expertise in distributed systems, containerization, virtual machines for operating system execution and communication between processes using zero-copy abstractions and kernel bypass in microkernel architecture systems. My knowledge allows me to optimize performance and facilitate efficient data transfer, enhancing the overall functionality and effectiveness of these systems.</p>
+      
+      <p style="text-align: justify; text-justify: inter-word;">I undergraduate student in Computer Science at Pontifícia Universidade Católica de Minas Gerais - <a href="https://www.pucminas.br/destaques/">PUCMINAS</a> and member of Brazilian Computer Society - <a href="https://www.sbc.org.br/">SBC</a>, Institute of Electrical and Electronics Engineers - <a href="https://www.ieee.org/">IEE</a> , IEEE Computer Society - <a href="https://www.computer.org/">IEEE CS</a> and Association for Computing Machinery - <a href="https://www.acm.org/">ACM<a/>. During my undergraduate I was Student Tutor of 3 disciplines: Data Base, Algorithms and Data Structures II and Compilers at the Instituto de Ciências Exatas e Informática - <a href="https://icei.pucminas.br">ICEI</a> - <a href="https://www.pucminas.br/destaques/">PUCMINAS</a>. As a mentor, I provide assistance to students of the course by addressing their questions and supporting the lead instructor.</p>
+      
+      <p style="text-align: justify; text-justify: inter-word;">Plus, I was Intern Researcher on a <a href="https://github.com/nanvix">Nanvix</a> project advised by Dr. <a href="https://www.microsoft.com/en-us/research/people/ppenna/">Pedro Henrique Penna</a>. Specializing in Compilers and Operating Systems at Nanvix. Involved in the development of a virtual machine using C and C++. Specifically in a Just-In-Time translation engine for the operating system Nanvix emulator that would translate assembly instructions from MIPS to RISC-V processor</p>
+      
+      <p style="text-align: justify; text-justify: inter-word;">Currently, I am working on my undergraduate thesis under the guidance of Dr. <a href="https://www.microsoft.com/en-us/research/people/ppenna/" style="color: blue">Pedro Henrique Penna</a> a Senior Research Software Engineer at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> and Dr. <a href="https://www.cart-research.com/team/henrique" style="color: blue">Henrique Cota Freitas</a> professor at <a href="https://icei.pucminas.br">ICEI</a> - <a href="https://www.pucminas.br/destaques/">PUCMINAS</a>. The main objective of my thesis is to develop an abstraction for inter-process communication in a microkernel architecture using kernel-bypass through the zero-copy technique.</p>
+    </section>
+</body>
+
+<footer>
+  <p>&copy; <script type = "text/javascript">
+      var dt = new Date();
+      document.write(dt.getFullYear()); 
+   </script> Vinicius Francisco da Silva</p>
+</footer>
+</html>

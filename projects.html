@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Vinicius F. da Silva</title>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+    
+    body{
+      font-family: 'Quattrocento', Georgia, Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(250, 247, 247);
+      color: #333;
+    }
+
+    .text {
+      font-family: 'Quattrocento', Georgia, Times, serif;
+      margin: 0;
+      padding: 0;
+      color: #585858;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding-right: 1px;
+      padding-left: 1px;
+      padding-top: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(71, 67, 67, 0.1);
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+    .project {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+    .project p {
+      font-size: 1em;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section:last-child {
+      margin-bottom: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+    }
+    
+    .circle-photo {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+      margin-right: 18px; /* Adiciona margem entre a imagem e o texto */
+      float: left; /* Faz a imagem ficar à esquerda */
+    }
+
+    .circle-photo img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #534f4f; /* Background color for the navbar */
+    }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between navbar items */
+  }
+
+  .navlist {
+    color: white; /* Text color for the navbar items */
+    text-decoration: none;
+    padding: 10px 30px; /* Adjust padding for the navbar items */
+  }
+
+  #maintext {
+      overflow: hidden; /* Limpa o float e mantém o texto ao lado */
+    }
+  #maintext h1 {
+    margin-top: 0;
+    margin-bottom: 5px; /* Adiciona alguma margem abaixo do título */
+  }
+
+</style>
+</head>
+<body>
+
+
+  <div class="container">
+    
+    <header>
+      <center><a href="/research/" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
+    </header>
+
+    <nav>
+        <center>
+          <ul>
+            <li><a class="navlist text" style="font-size: 20px" href="./researches.html">Researches</a></li>
+            <li><a class="navlist text" style="font-size: 20px" href="./teaching.html">Teaching</a></li>
+            <li><a class="navlist text" style="font-size: 20px" href="./projects.html">Projects</a></li>
+            <li><a class="navlist text" style="font-size: 20px" target="_blank" href="https://silvavinicius.com.br/resume/vinicius.pdf">CV</a></li>
+            <li><a class="navlist text" style="font-size: 20px" href="./contact.html">Contact</a></li>
+          </ul>
+      </center>
+      </nav>
+    <br/>
+
+    <section id="photo">
+      <div style="padding: 15px;">
+        <div id="photo" class="circle-photo"><img src="vinicius.jpeg" alt=""></div>
+        <div class="text" id="maintext"><center><span style="font-size: 33px;">I am a Operating Systems Researcher</span></center></div>
+      </div>
+    </section>
+
+    <section>
+        <span class="text" style="font-size: 25px;">Free software projects</span><br/><br/>
+        <br/><br/>
+
+        <div class="project">
+            <h3 class="text">Danix Subsystem</h3>
+            <p style="text-align: justify; text-justify: inter-word;">
+                Danix is an innovative system that provides an interface for managing lightweight Alpine environments, offering greater efficiency and resource savings. Danix's unique feature lies in using the host machine's own kernel, resulting in a lighter and more efficient approach that consumes only the necessary space for each environment's filesystem.
+            </p>
+
+            <p style="text-align: justify; text-justify: inter-word;">
+                The main goal of Danix is to provide lightweight environments for simple tasks, eliminating the need to install compilers, interpreters, and other tools directly on the host operating system, such as git and editors. This approach brings noticeable benefits, such as agility in configuring environments for software development in various languages like Python, C/C++, Go, Rust, Java, Lua, among others.
+            </p>
+
+            <p style="text-align: justify; text-justify: inter-word;">
+                By choosing Danix, users can create custom environments without the hassle of time-consuming and heavy installations, such as virtual machines and containers, especially for simpler projects. The idea is to simplify the development process, removing unnecessary barriers and allowing for a more agile and efficient approach.
+
+            </p>
+
+            <p style="text-align: justify; text-justify: inter-word;">
+                In summary, Danix is the ideal choice for those seeking lightweight, customized, and efficient environments for software development, providing an innovative and streamlined alternative compared to more traditional, heavier options.
+            </p>
+
+            <p style="text-align: justify; text-justify: inter-word;">
+                • Repository: <a href="https://github.com/viniciusfdasilva/danixfs">https://github.com/viniciusfdasilva/danixfs<a>
+            </p>
+
+            <p style="text-align: justify; text-justify: inter-word;">
+                • License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">https://www.gnu.org/licenses/gpl-3.0.html<a>
+            </p>
+
+        </div>
+
+        <div class="project">
+            <h3 class="text">Vinux distro - GNU/Linux Operating System</h3>
+            <p style="text-align: justify; text-justify: inter-word;">
+                Vinux stands out as a lightweight distribution that leverages the Linux kernel and busybox as its foundational building blocks. Specifically crafted to cater to embedded systems, Vinux addresses the needs of those requiring a secure, lightweight, and stable operating system with predefined packages.
+            </p>
+
+            <p style="text-align: justify; text-justify: inter-word;">
+                Designed with a focus on embedded systems, Vinux provides a reliable platform that ensures both security and stability. By utilizing the Linux kernel and busybox, it achieves a nimble architecture, making it an ideal choice for environments where resource efficiency is crucial.
+            </p>
+
+            <p style="text-align: justify; text-justify: inter-word;">
+                Furthermore, Vinux boasts a fixed set of packages, contributing to its stability and predictability. This characteristic is particularly advantageous for embedded systems, where maintaining a consistent and secure software environment is paramount.
+            </p>
+
+            <p style="text-align: justify; text-justify: inter-word;">
+                In essence, Vinux emerges as a specialized distribution, tailored to the demands of embedded systems, offering a secure, lightweight, and stable operating system with a carefully curated set of packages.
+            </p>
+            
+            <p style="text-align: justify; text-justify: inter-word;">
+                • Repository: <a href="https://github.com/viniciusfdasilva/vinux">https://github.com/viniciusfdasilva/vinux<a>
+            </p>
+
+            <p style="text-align: justify; text-justify: inter-word;">
+                • License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">https://www.gnu.org/licenses/gpl-3.0.html<a>
+            </p>
+        </div>
+
+       
+    </section>
+</body>
+
+<footer>
+  <p>&copy; <script type = "text/javascript">
+      var dt = new Date();
+      document.write(dt.getFullYear()); 
+   </script> Vinicius Francisco da Silva</p>
+</footer>
+</html>
