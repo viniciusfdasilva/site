@@ -5,7 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
   <title>Vinicius F. da Silva</title>
+
+  <script>
+    window.onload = function(){
+      idiom = window.location.hash
+
+      if(idiom == '#pt-br'){
+        document.getElementById('en').style.display = 'none'
+      }else{
+        document.getElementById('pt-br').style.display = 'none' 
+      }
+    }
+
+    function visible(){
+      idiom = window.location.hash
+
+      if(idiom == '#pt-br'){
+        document.getElementById('en').style.display = 'none'
+        document.getElementById('pt-br').style.display = 'block'
+      }
+    }
+  </script>
+
   <style>
+    
 
     @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
     
@@ -123,99 +146,205 @@
 
 
   <div class="container">
-    
-    <header>
-      <center><a href="/" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
-    </header>
+    <div id="en">
+      <header>
+        <center><a href="/" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
+        <nav style="background-color: white">
+          <a href="./researches.html"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg"></a>
+          <a href="./researches.html#pt-br" onclick="visible()"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1024px-Flag_of_Brazil.svg.png"></a>
+        </nav>
+      </header>
 
-    <nav>
-        <center>
-          <ul>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./index.html">Home</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./researches.html">Works</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./teaching.html">Teaching</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./projects.html">Projects</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./certificates.html">Certificates</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" target="_blank" href="https://silvavinicius.com.br/resume/vinicius.pdf">CV</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./contact.html">Contact</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./blog.html">Blog</a></li>
-          </ul>
-      </center>
-      </nav>
-    <br/>
+      <nav>
+          <center>
+            <ul>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./index.html">Home</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./researches.html">Works</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./teaching.html">Teaching</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./projects.html">Projects</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./certificates.html">Certificates</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" target="_blank" href="https://silvavinicius.com.br/resume/vinicius.pdf">CV</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./contact.html">Contact</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./blog.html">Blog</a></li>
+            </ul>
+        </center>
+        </nav>
+      <br/>
 
-    <section id="photo">
-      <div style="padding: 15px;">
-        <div id="photo" class="circle-photo"><img src="vinicius.jpeg" alt=""></div>
-        <div class="text" id="maintext"><center><span style="font-size: 33px;">I am a Operating Systems Researcher</span></center></div>
-      </div>
-    </section>
-
-    <section>
-        <span class="text" style="font-size: 25px;">Undergraduate projects & Memberships</span><br/><br/>
-        <br/><br/>
-        <div class="project">
-            <h3 class="text">Undergraduate Thesis - <a href="https://icei.pucminas.br">ICEI</a> - <a href="https://www.pucminas.br/destaques/">PUCMINAS</a></h3>
-            <p style="text-align: justify; text-justify: inter-word;">My undergraduate thesis proposes a kernel-bypass device that implements a communication abstraction between processes using the zero-copy technique, involving direct data transfer between processes in a microkernel architecture, removing context switches and intermediate copies that cause overhead.</p> 
-            <p>• Advisor 1: <a href="https://www.microsoft.com/en-us/research/people/ppenna/" style="color: blue">Pedro Henrique Penna</a></p>
-            <p>• Advisor 2: <a href="https://www.cart-research.com/team/henrique" style="color: blue">Henrique Cota de Freitas</a></p>
+      <section id="photo">
+        <div style="padding: 15px;">
+          <div id="photo" class="circle-photo"><img src="vinicius.jpeg" alt=""></div>
+          <div class="text" id="maintext"><center><span style="font-size: 33px;">I am a Operating Systems Researcher</span></center></div>
         </div>
-        
-        <div class="project">
-            <h3 class="text">Researcher in Compilers and Operating System at <a href="https://github.com/nanvix">Nanvix</a></h3>
-            <p style="text-align: justify; text-justify: inter-word;">Virtual Machine develop using C and C++ languanges. Nanvix VM decode a MIPS and ARM assembly, translate to RISC-V Assembly and run in a manycore processor!</p>
-            <p style="text-align: justify; text-justify: inter-word;">As a researcher with expertise in Compilers and Operating Systems at Nanvix, my focus lies in
-                the advancement of a virtual machine project. This undertaking centers on the development
-                of a Just-In-Time translation engine within the Nanvix emulator’s operating system. Aiming
-                to enhance emulation efficiency, my role encompasses the creation of this engine using
-                C and C++ programming languages. Its primary function is the real-time translation of
-                assembly instructions, transitioning from the MIPS architecture to the RISC-V processor, thus
-                contributing to the optimization of the Nanvix emulator’s performance.</p>
-            
-            <p>• Advisor: <a href="https://www.microsoft.com/en-us/research/people/ppenna/" style="color: blue">Pedro Henrique Penna</a></p>
-            <p>• Document: <a href="https://silvavinicius.com.br/resume/letter_of_recommendation.pdf" style="color: blue">link</a></p>
-        </div>
+      </section>
 
-        <div class="project">
-          <h3 class="text">PIBIC/CNPQ Researcher at Programa de Pós-Graduação em Odontologia - <a href="https://icbs.pucminas.br/">ICBS</a> - <a href="https://www.pucminas.br/destaques/">PUCMINAS</a></h3>
-          <p style="text-align: justify; text-justify: inter-word;">I have worked as an Android application developer, using Java and Kotlin programming
-            languages, as part of a scientific initiation for the postgraduate program in dentistry.</p>
-            <p>• Advisor: Rodrigo Villamarim Soares</p>
-            <p>• Document: <a href="https://silvavinicius.com.br/resume/researcher_ppgo.pdf" style="color: blue">link</a></p>
-        </div>
-
-        <div class="project">
-          <h3 class="text">Memberships</h3>
+      <section>
+          <span class="text" style="font-size: 25px;">Undergraduate projects & Memberships</span><br/><br/>
           <br/><br/>
           <div class="project">
-              <h3 class="text">IEEE Computer Society - <a href="https://www.computer.org">IEEE ICS</a></h3>
-			    <br/>
-			    <img src="https://upload.wikimedia.org/wikipedia/en/4/47/IEEE_Computer.png" alt="some text" width=170 height=60>           
-          	<p>• Document: <a href="https://silvavinicius.com.br/resume/IEE_CS.pdf" style="color: blue">link</a></p>
+              <h3 class="text">Undergraduate Thesis - <a href="https://icei.pucminas.br">ICEI</a> - <a href="https://www.pucminas.br/destaques/">PUCMINAS</a></h3>
+              <p style="text-align: justify; text-justify: inter-word;">My undergraduate thesis proposes a kernel-bypass device that implements a communication abstraction between processes using the zero-copy technique, involving direct data transfer between processes in a microkernel architecture, removing context switches and intermediate copies that cause overhead.</p> 
+              <p>• Advisor 1: <a href="https://www.microsoft.com/en-us/research/people/ppenna/" style="color: blue">Pedro Henrique Penna</a></p>
+              <p>• Advisor 2: <a href="https://www.cart-research.com/team/henrique" style="color: blue">Henrique Cota de Freitas</a></p>
           </div>
 
           <div class="project">
-              <h3 class="text">Institute of Electrical and Electronics Engineers - <a href="https://www.ieee.org">IEEE</a></h3>
-			    <br/>
-       	  	<img src="https://www.dataprivacybr.org/wp-content/uploads/2022/10/ieee-1.png" alt="some text" width=90 height=100>           
-          	<p>• Document: <a href="https://silvavinicius.com.br/resume/IEE.pdf" style="color: blue">link</a></p>
+              <h3 class="text">Researcher in Compilers and Operating System at <a href="https://github.com/nanvix">Nanvix</a></h3>
+              <p style="text-align: justify; text-justify: inter-word;">Virtual Machine develop using C and C++ languanges. Nanvix VM decode a MIPS and ARM assembly, translate to RISC-V Assembly and run in a manycore processor!</p>
+              <p style="text-align: justify; text-justify: inter-word;">As a researcher with expertise in Compilers and Operating Systems at Nanvix, my focus lies in
+                  the advancement of a virtual machine project. This undertaking centers on the development
+                  of a Just-In-Time translation engine within the Nanvix emulator’s operating system. Aiming
+                  to enhance emulation efficiency, my role encompasses the creation of this engine using
+                  C and C++ programming languages. Its primary function is the real-time translation of
+                  assembly instructions, transitioning from the MIPS architecture to the RISC-V processor, thus
+                  contributing to the optimization of the Nanvix emulator’s performance.</p>
+              
+              <p>• Advisor: <a href="https://www.microsoft.com/en-us/research/people/ppenna/" style="color: blue">Pedro Henrique Penna</a></p>
+              <p>• Document: <a href="https://silvavinicius.com.br/resume/letter_of_recommendation.pdf" style="color: blue">link</a></p>
           </div>
 
           <div class="project">
-              <h3 class="text">Brazilian Computer Society - <a href="https://www.sbc.org.br">SBC</a></h3>
-          	<br/>
-          	<img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Logo_SBC_Transparente.jpeg" alt="some text" width=70 height=95>           
-          	<p>• Document: <a href="https://silvavinicius.com.br/resume/sbc.pdf" style="color: blue">link</a></p>
-	        </div>
+            <h3 class="text">PIBIC/CNPQ Researcher at Programa de Pós-Graduação em Odontologia - <a href="https://icbs.pucminas.br/">ICBS</a> - <a href="https://www.pucminas.br/destaques/">PUCMINAS</a></h3>
+            <p style="text-align: justify; text-justify: inter-word;">I have worked as an Android application developer, using Java and Kotlin programming
+              languages, as part of a scientific initiation for the postgraduate program in dentistry.</p>
+              <p>• Advisor: Rodrigo Villamarim Soares</p>
+              <p>• Document: <a href="https://silvavinicius.com.br/resume/researcher_ppgo.pdf" style="color: blue">link</a></p>
+          </div>
 
           <div class="project">
-              <h3 class="text">Association for Computing Machinery - <a href="https://www.acm.org/">ACM</a></h3>
-                  <br/>
-          	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg" alt="some text" width=95 height=95>
-          	<p>• Document: <a href="https://silvavinicius.com.br/resume/acm.pdf" style="color: blue">link</a></p>
-        </div>
+            <h3 class="text">Memberships</h3>
+            <br/><br/>
+            <div class="project">
+                <h3 class="text">IEEE Computer Society - <a href="https://www.computer.org">IEEE ICS</a></h3>
+		  	    <br/>
+		  	    <img src="https://upload.wikimedia.org/wikipedia/en/4/47/IEEE_Computer.png" alt="some text" width=170 height=60>           
+            	<p>• Document: <a href="https://silvavinicius.com.br/resume/IEE_CS.pdf" style="color: blue">link</a></p>
+            </div>
+
+            <div class="project">
+                <h3 class="text">Institute of Electrical and Electronics Engineers - <a href="https://www.ieee.org">IEEE</a></h3>
+		  	    <br/>
+         	  	<img src="https://www.dataprivacybr.org/wp-content/uploads/2022/10/ieee-1.png" alt="some text" width=90 height=100>           
+            	<p>• Document: <a href="https://silvavinicius.com.br/resume/IEE.pdf" style="color: blue">link</a></p>
+            </div>
+
+            <div class="project">
+                <h3 class="text">Brazilian Computer Society - <a href="https://www.sbc.org.br">SBC</a></h3>
+            	<br/>
+            	<img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Logo_SBC_Transparente.jpeg" alt="some text" width=70 height=95>           
+            	<p>• Document: <a href="https://silvavinicius.com.br/resume/sbc.pdf" style="color: blue">link</a></p>
+	          </div>
+
+            <div class="project">
+                <h3 class="text">Association for Computing Machinery - <a href="https://www.acm.org/">ACM</a></h3>
+                    <br/>
+            	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg" alt="some text" width=95 height=95>
+            	<p>• Document: <a href="https://silvavinicius.com.br/resume/acm.pdf" style="color: blue">link</a></p>
+          </div>
+      </div>
+      </section>
     </div>
-    </section>
+
+
+    <div id="pt-br">
+      <header>
+        <center><a href="/#pt-br" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
+        <nav style="background-color: white">
+          <a href="./researches.html"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg"></a>
+          <a href="./researches.html#pt-br" onclick="visible()"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1024px-Flag_of_Brazil.svg.png"></a>
+        </nav>
+      </header>
+
+      <nav>
+          <center>
+            <ul>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./index.html#pt-br">Home</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./researches.html#pt-br">Works</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./teaching.html#pt-br">Teaching</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./projects.html#pt-br">Projects</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./certificates.html#pt-br">Certificates</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" target="_blank" href="https://silvavinicius.com.br/resume/vinicius.pdf">CV</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./contact.html#pt-br">Contact</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./blog.html#pt-br">Blog</a></li>
+            </ul>
+        </center>
+        </nav>
+      <br/>
+
+      <section id="photo">
+        <div style="padding: 15px;">
+          <div id="photo" class="circle-photo"><img src="vinicius.jpeg" alt=""></div>
+          <div class="text" id="maintext"><center><span style="font-size: 33px;">I am a Operating Systems Researcher</span></center></div>
+        </div>
+      </section>
+
+      <section>
+          <span class="text" style="font-size: 25px;">Undergraduate projects & Memberships</span><br/><br/>
+          <br/><br/>
+          <div class="project">
+              <h3 class="text">Undergraduate Thesis - <a href="https://icei.pucminas.br">ICEI</a> - <a href="https://www.pucminas.br/destaques/">PUCMINAS</a></h3>
+              <p style="text-align: justify; text-justify: inter-word;">My undergraduate thesis proposes a kernel-bypass device that implements a communication abstraction between processes using the zero-copy technique, involving direct data transfer between processes in a microkernel architecture, removing context switches and intermediate copies that cause overhead.</p> 
+              <p>• Advisor 1: <a href="https://www.microsoft.com/en-us/research/people/ppenna/" style="color: blue">Pedro Henrique Penna</a></p>
+              <p>• Advisor 2: <a href="https://www.cart-research.com/team/henrique" style="color: blue">Henrique Cota de Freitas</a></p>
+          </div>
+
+          <div class="project">
+              <h3 class="text">Researcher in Compilers and Operating System at <a href="https://github.com/nanvix">Nanvix</a></h3>
+              <p style="text-align: justify; text-justify: inter-word;">Virtual Machine develop using C and C++ languanges. Nanvix VM decode a MIPS and ARM assembly, translate to RISC-V Assembly and run in a manycore processor!</p>
+              <p style="text-align: justify; text-justify: inter-word;">As a researcher with expertise in Compilers and Operating Systems at Nanvix, my focus lies in
+                  the advancement of a virtual machine project. This undertaking centers on the development
+                  of a Just-In-Time translation engine within the Nanvix emulator’s operating system. Aiming
+                  to enhance emulation efficiency, my role encompasses the creation of this engine using
+                  C and C++ programming languages. Its primary function is the real-time translation of
+                  assembly instructions, transitioning from the MIPS architecture to the RISC-V processor, thus
+                  contributing to the optimization of the Nanvix emulator’s performance.</p>
+              
+              <p>• Advisor: <a href="https://www.microsoft.com/en-us/research/people/ppenna/" style="color: blue">Pedro Henrique Penna</a></p>
+              <p>• Document: <a href="https://silvavinicius.com.br/resume/letter_of_recommendation.pdf" style="color: blue">link</a></p>
+          </div>
+
+          <div class="project">
+            <h3 class="text">PIBIC/CNPQ Researcher at Programa de Pós-Graduação em Odontologia - <a href="https://icbs.pucminas.br/">ICBS</a> - <a href="https://www.pucminas.br/destaques/">PUCMINAS</a></h3>
+            <p style="text-align: justify; text-justify: inter-word;">I have worked as an Android application developer, using Java and Kotlin programming
+              languages, as part of a scientific initiation for the postgraduate program in dentistry.</p>
+              <p>• Advisor: Rodrigo Villamarim Soares</p>
+              <p>• Document: <a href="https://silvavinicius.com.br/resume/researcher_ppgo.pdf" style="color: blue">link</a></p>
+          </div>
+
+          <div class="project">
+            <h3 class="text">Memberships</h3>
+            <br/><br/>
+            <div class="project">
+                <h3 class="text">IEEE Computer Society - <a href="https://www.computer.org">IEEE ICS</a></h3>
+		  	    <br/>
+		  	    <img src="https://upload.wikimedia.org/wikipedia/en/4/47/IEEE_Computer.png" alt="some text" width=170 height=60>           
+            	<p>• Document: <a href="https://silvavinicius.com.br/resume/IEE_CS.pdf" style="color: blue">link</a></p>
+            </div>
+
+            <div class="project">
+                <h3 class="text">Institute of Electrical and Electronics Engineers - <a href="https://www.ieee.org">IEEE</a></h3>
+		  	    <br/>
+         	  	<img src="https://www.dataprivacybr.org/wp-content/uploads/2022/10/ieee-1.png" alt="some text" width=90 height=100>           
+            	<p>• Document: <a href="https://silvavinicius.com.br/resume/IEE.pdf" style="color: blue">link</a></p>
+            </div>
+
+            <div class="project">
+                <h3 class="text">Brazilian Computer Society - <a href="https://www.sbc.org.br">SBC</a></h3>
+            	<br/>
+            	<img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Logo_SBC_Transparente.jpeg" alt="some text" width=70 height=95>           
+            	<p>• Document: <a href="https://silvavinicius.com.br/resume/sbc.pdf" style="color: blue">link</a></p>
+	          </div>
+
+            <div class="project">
+                <h3 class="text">Association for Computing Machinery - <a href="https://www.acm.org/">ACM</a></h3>
+                    <br/>
+            	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg" alt="some text" width=95 height=95>
+            	<p>• Document: <a href="https://silvavinicius.com.br/resume/acm.pdf" style="color: blue">link</a></p>
+          </div>
+      </div>
+      </section>
+    </div>
+  </div>
 </body>
 
 <footer>

@@ -6,6 +6,27 @@
  
   <title>Vinicius F. da Silva</title>
 
+  <script>
+    window.onload = function(){
+      idiom = window.location.hash
+
+      if(idiom == '#pt-br'){
+        document.getElementById('en').style.display = 'none'
+      }else{
+        document.getElementById('pt-br').style.display = 'none' 
+      }
+    }
+
+    function visible(){
+      idiom = window.location.hash
+
+      if(idiom == '#pt-br'){
+        document.getElementById('en').style.display = 'none'
+        document.getElementById('pt-br').style.display = 'block'
+      }
+    }
+  </script>
+
   <script type="module" src="https://md-block.verou.me/md-block.js"></script>
 
   <style>
@@ -126,68 +147,139 @@
 
 
   <div class="container">
-    
-    <header>
-      <center><a href="/" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
-    </header>
+    <div id="en"> 
+      <header>
+        <center><a href="/" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
+        <nav style="background-color: white">
+          <a href="./blog.html"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg"></a>
+          <a href="./blog.html#pt-br" onclick="visible()"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1024px-Flag_of_Brazil.svg.png"></a>
+        </nav>
+      </header>
 
-    <nav>
-        <center>
-          <ul>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./index.html">Home</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./researches.html">Works</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./teaching.html">Teaching</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./projects.html">Projects</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./certificates.html">Certificates</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" target="_blank" href="https://silvavinicius.com.br/resume/vinicius.pdf">CV</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./contact.html">Contact</a></li>
-            <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./blog.html">Blog</a></li>
-          </ul>
-      </center>
-      </nav>
-    <br/>
+      <nav>
+          <center>
+            <ul>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./index.html">Home</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./researches.html">Works</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./teaching.html">Teaching</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./projects.html">Projects</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./certificates.html">Certificates</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" target="_blank" href="https://silvavinicius.com.br/resume/vinicius.pdf">CV</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./contact.html">Contact</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./blog.html">Blog</a></li>
+            </ul>
+        </center>
+        </nav>
+      <br/>
 
-    <section id="photo">
-      <div style="padding: 15px;">
-        <div id="photo" class="circle-photo"><img src="vinicius.jpeg" alt=""></div>
-        <div class="text" id="maintext"><center><span style="font-size: 33px;">I am a Operating Systems Researcher</span></center></div>
-      </div>
-    </section>
-
-    <section>
-        <span class="text" style="font-size: 25px;">Mini Blog</span><br/><br/>
-        
-        <br/><br/>
-        <div class="project">
-            <h3 class="text">Artificial Intelligence, spatial analysis and access to healthcare</h3>
-            <p style="text-align: justify; text-justify: inter-word;">In October 2023, I participated in the course 'Artificial Intelligence, Spatial Analysis, and Access to Healthcare,' taught by Professor Hasheem Mannan from University College Dublin, who came to Brazil through Puc Minas' Internationalization program. The course consisted of four days of in-person classes at the Coração Eucarístico campus, where we explored the theory of the global healthcare system with a focus on public health accessibility. We delved into how tools from the fields of Artificial Intelligence and Geography can contribute to a comprehensive analysis of health data. Through this analysis, we aimed to develop public policies that would contribute to the improvement of the healthcare system.</p>
-        
-
-            <img width="780" height="780" src="https://licap.icei.pucminas.br/img/news/artificial-intelligence-healthcare-news2.jpg" alt="">    
-            <br/><br/>
-            <center><img width="500" height="300" src="https://licap.icei.pucminas.br/img/news/artificial-intelligence-healthcare-news2-photo2.png" alt=""></center>    
+      <section id="photo">
+        <div style="padding: 15px;">
+          <div id="photo" class="circle-photo"><img src="vinicius.jpeg" alt=""></div>
+          <div class="text" id="maintext"><center><span style="font-size: 33px;">I am a Operating Systems Researcher</span></center></div>
         </div>
+      </section>
 
-        <br/><br/>
-        <div class="project">
-          <h3 class="text">Executing a DoS Attack on a Docker Container</h3>
-            <p style="text-align: justify; text-justify: inter-word;">Recently, I shared a publication on Medium about the importance of strengthening security in Docker environments. I discussed strategies for protecting containers against potential threats, highlighting the relevance of secure practices.
-              Cybersecurity is a constant priority, especially in dynamic environments like Docker containers. I believe that sharing knowledge about defenses against possible attacks is fundamental to promoting safer digital environments.
-              If it interests you, I invite you to read the article and share your ideas and experiences. I am always open to constructive dialogue about cybersecurity and best practices in IT.</p>
-            
-              <p><a href="https://medium.com/@vinicius.silva.1046664/executando-ataque-de-dos-em-um-container-docker-1f640277d23d">link</a></p>
+      <section>
+          <span class="text" style="font-size: 25px;">Mini Blog</span><br/><br/>
+
+          <br/><br/>
+          <div class="project">
+              <h3 class="text">Artificial Intelligence, spatial analysis and access to healthcare</h3>
+              <p style="text-align: justify; text-justify: inter-word;">In October 2023, I participated in the course 'Artificial Intelligence, Spatial Analysis, and Access to Healthcare,' taught by Professor Hasheem Mannan from University College Dublin, who came to Brazil through Puc Minas' Internationalization program. The course consisted of four days of in-person classes at the Coração Eucarístico campus, where we explored the theory of the global healthcare system with a focus on public health accessibility. We delved into how tools from the fields of Artificial Intelligence and Geography can contribute to a comprehensive analysis of health data. Through this analysis, we aimed to develop public policies that would contribute to the improvement of the healthcare system.</p>
+          
+
+              <img width="780" height="780" src="https://licap.icei.pucminas.br/img/news/artificial-intelligence-healthcare-news2.jpg" alt="">    
+              <br/><br/>
+              <center><img width="500" height="300" src="https://licap.icei.pucminas.br/img/news/artificial-intelligence-healthcare-news2-photo2.png" alt=""></center>    
+          </div>
+
+          <br/><br/>
+          <div class="project">
+            <h3 class="text">Executing a DoS Attack on a Docker Container</h3>
+              <p style="text-align: justify; text-justify: inter-word;">Recently, I shared a publication on Medium about the importance of strengthening security in Docker environments. I discussed strategies for protecting containers against potential threats, highlighting the relevance of secure practices.
+                Cybersecurity is a constant priority, especially in dynamic environments like Docker containers. I believe that sharing knowledge about defenses against possible attacks is fundamental to promoting safer digital environments.
+                If it interests you, I invite you to read the article and share your ideas and experiences. I am always open to constructive dialogue about cybersecurity and best practices in IT.</p>
+              
+                <p><a href="https://medium.com/@vinicius.silva.1046664/executando-ataque-de-dos-em-um-container-docker-1f640277d23d">link</a></p>
+          </div>
+
+          <br/><br/>
+          <div class="project">
+            <h3 class="text">Why are containers not implemented with chroot?</h3>
+              <p style="text-align: justify; text-justify: inter-word;">Discover why Docker doesn't use chroot and delve into the essence of container security and architecture with my latest article on Medium. Exploring the reasons behind this innovative choice, I unravel how Docker employs namespaces, cgroups, and other virtualization technologies to ensure a secure and highly efficient environment. Get ready for an in-depth analysis of how these techniques are shaping the future of container computing and cybersecurity. Access now and expand your knowledge of the digital infrastructure of the future.</p>
+
+                <p><a href="https://medium.com/@vinicius.silva.programmer/porque-docker-n%C3%A3o-utiliza-chroot-5f300a470e96">link</a></p>
+          </div>
+      </section>
+    </div>
+
+
+    <div id="pt-br"> 
+      <header>
+        <center><a href="/#pt-br" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
+        <nav style="background-color: white">
+          <a href="./blog.html"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg"></a>
+          <a href="./blog.html#pt-br" onclick="visible()"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1024px-Flag_of_Brazil.svg.png"></a>
+        </nav>
+      </header>
+
+      <nav>
+          <center>
+            <ul>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./index.html#pt-br">Home</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./researches.html#pt-br">Works</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./teaching.html#pt-br">Teaching</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./projects.html#pt-br">Projects</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./certificates.html#pt-br">Certificates</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" target="_blank" href="https://silvavinicius.com.br/resume/vinicius.pdf">CV</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./contact.html#pt-br">Contact</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./blog.html#pt-br">Blog</a></li>
+            </ul>
+        </center>
+        </nav>
+      <br/>
+
+      <section id="photo">
+        <div style="padding: 15px;">
+          <div id="photo" class="circle-photo"><img src="vinicius.jpeg" alt=""></div>
+          <div class="text" id="maintext"><center><span style="font-size: 33px;">I am a Operating Systems Researcher</span></center></div>
         </div>
+      </section>
 
-        <br/><br/>
-        <div class="project">
-          <h3 class="text">Why are containers not implemented with chroot?</h3>
-            <p style="text-align: justify; text-justify: inter-word;">Discover why Docker doesn't use chroot and delve into the essence of container security and architecture with my latest article on Medium. Exploring the reasons behind this innovative choice, I unravel how Docker employs namespaces, cgroups, and other virtualization technologies to ensure a secure and highly efficient environment. Get ready for an in-depth analysis of how these techniques are shaping the future of container computing and cybersecurity. Access now and expand your knowledge of the digital infrastructure of the future.</p>
-            
-              <p><a href="https://medium.com/@vinicius.silva.programmer/porque-docker-n%C3%A3o-utiliza-chroot-5f300a470e96">link</a></p>
-        </div>
-    </section>
+      <section>
+          <span class="text" style="font-size: 25px;">Mini Blog</span><br/><br/>
 
-   
+          <br/><br/>
+          <div class="project">
+              <h3 class="text">Artificial Intelligence, spatial analysis and access to healthcare</h3>
+              <p style="text-align: justify; text-justify: inter-word;">In October 2023, I participated in the course 'Artificial Intelligence, Spatial Analysis, and Access to Healthcare,' taught by Professor Hasheem Mannan from University College Dublin, who came to Brazil through Puc Minas' Internationalization program. The course consisted of four days of in-person classes at the Coração Eucarístico campus, where we explored the theory of the global healthcare system with a focus on public health accessibility. We delved into how tools from the fields of Artificial Intelligence and Geography can contribute to a comprehensive analysis of health data. Through this analysis, we aimed to develop public policies that would contribute to the improvement of the healthcare system.</p>
+          
+
+              <img width="780" height="780" src="https://licap.icei.pucminas.br/img/news/artificial-intelligence-healthcare-news2.jpg" alt="">    
+              <br/><br/>
+              <center><img width="500" height="300" src="https://licap.icei.pucminas.br/img/news/artificial-intelligence-healthcare-news2-photo2.png" alt=""></center>    
+          </div>
+
+          <br/><br/>
+          <div class="project">
+            <h3 class="text">Executing a DoS Attack on a Docker Container</h3>
+              <p style="text-align: justify; text-justify: inter-word;">Recently, I shared a publication on Medium about the importance of strengthening security in Docker environments. I discussed strategies for protecting containers against potential threats, highlighting the relevance of secure practices.
+                Cybersecurity is a constant priority, especially in dynamic environments like Docker containers. I believe that sharing knowledge about defenses against possible attacks is fundamental to promoting safer digital environments.
+                If it interests you, I invite you to read the article and share your ideas and experiences. I am always open to constructive dialogue about cybersecurity and best practices in IT.</p>
+              
+                <p><a href="https://medium.com/@vinicius.silva.1046664/executando-ataque-de-dos-em-um-container-docker-1f640277d23d">link</a></p>
+          </div>
+
+          <br/><br/>
+          <div class="project">
+            <h3 class="text">Why are containers not implemented with chroot?</h3>
+              <p style="text-align: justify; text-justify: inter-word;">Discover why Docker doesn't use chroot and delve into the essence of container security and architecture with my latest article on Medium. Exploring the reasons behind this innovative choice, I unravel how Docker employs namespaces, cgroups, and other virtualization technologies to ensure a secure and highly efficient environment. Get ready for an in-depth analysis of how these techniques are shaping the future of container computing and cybersecurity. Access now and expand your knowledge of the digital infrastructure of the future.</p>
+
+                <p><a href="https://medium.com/@vinicius.silva.programmer/porque-docker-n%C3%A3o-utiliza-chroot-5f300a470e96">link</a></p>
+          </div>
+      </section>
+    </div>
+  </div>
 </body>
 
 <footer>
