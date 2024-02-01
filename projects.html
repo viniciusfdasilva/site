@@ -23,6 +23,9 @@
       if(idiom == '#pt-br'){
         document.getElementById('en').style.display = 'none'
         document.getElementById('pt-br').style.display = 'block'
+      }else{
+        document.getElementById('pt-br').style.display = 'none'
+        document.getElementById('en').style.display = 'block'
       }
     }
   </script>
@@ -149,7 +152,7 @@
       <header>
         <center><a href="/" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
         <nav style="background-color: white">
-          <a href="./projects.html"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg"></a>
+          <a href="./projects.html#en" onclick="visible()"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg"></a>
           <a href="./projects.html#pt-br" onclick="visible()"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1024px-Flag_of_Brazil.svg.png"></a>
         </nav>
       </header>
@@ -217,7 +220,6 @@
               <div class="project">
 
                   <h3 class="text">Lua Programming Language</h3><br/><img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/640px-Lua-Logo.svg.png"/>
-                  <p style="text-align: justify; text-justify: inter-word;">Distributed OS for Lightweight Manycores.</p>
                   <p style="text-align: justify; text-justify: inter-word;">Contribution: <a href="https://github.com/viniciusfdasilva/lua/">Repository</a></p>
               </div>
 
@@ -287,9 +289,9 @@
 
     <div id="pt-br">
       <header>
-        <center><a href="#/pt-br" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
+        <center><a href="./index.html#pt-br" style="text-decoration:none"><span class="text" style="font-size: 40px;">VINICIUS F. DA SILVA</span></a></center><br/>
         <nav style="background-color: white">
-          <a href="./projects.html"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg"></a>
+          <a href="./projects.html#en"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg"></a>
           <a href="./projects.html#pt-br" onclick="visible()"><img style="margin-left: 100%" width="30" heigth="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1024px-Flag_of_Brazil.svg.png"></a>
         </nav>
       </header>
@@ -297,13 +299,13 @@
       <nav>
           <center>
             <ul>
-              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./index.html#pt-br">Home</a></li>
-              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./researches.html#pt-br">Works</a></li>
-              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./teaching.html#pt-br">Teaching</a></li>
-              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./projects.html#pt-br">Projects</a></li>
-              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./certificates.html#pt-br">Certificates</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -33px" href="./index.html#pt-br">Início</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./researches.html#pt-br">Trabalho</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./teaching.html#pt-br">Ensino</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./projects.html#pt-br">Projeto</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./certificates.html#pt-br">Certificado</a></li>
               <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" target="_blank" href="https://silvavinicius.com.br/resume/vinicius.pdf">CV</a></li>
-              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./contact.html#pt-br">Contact</a></li>
+              <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./contact.html#pt-br">Contato</a></li>
               <li><a class="navlist text" style="font-size: 20px; margin-left: -40px" href="./blog.html#pt-br">Blog</a></li>
             </ul>
         </center>
@@ -313,23 +315,23 @@
       <section id="photo">
         <div style="padding: 15px;">
           <div id="photo" class="circle-photo"><img src="vinicius.jpeg" alt=""></div>
-          <div class="text" id="maintext"><center><span style="font-size: 33px;">I am a Operating Systems Researcher</span></center></div>
+          <div class="text" id="maintext"><center><span style="font-size: 33px;">Sou pesquisador na área de sistemas operacionais</span></center></div>
         </div>
       </section>
 
       <section>
-          <span class="text" style="font-size: 25px;">Contributions and own projects</span><br/><br/>
+          <span class="text" style="font-size: 25px;">Contribuições e meus projetos</span><br/><br/>
           <br/><br/>
 
           <div class="project">
-              <h3 class="text">Contributions to Open Source community</h3>
+              <h3 class="text">Contribuições para a comunidade de código aberto e de código livre</h3>
               <br/><br/>
               <div class="project">
 
-                  <h3 class="text">V Programming Language</h3><br/><img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/V_Logo_SVG.svg/800px-V_Logo_SVG.svg.png"/>
-                  <p style="text-align: justify; text-justify: inter-word;">V is a Simple, fast, safe, compiled language for developing maintainable software programming language.</p>
-                  <p style="text-align: justify; text-justify: inter-word;">Available in: <a href="https://github.com/vlang/v">V</a></p>
-                  <p style="text-align: justify; text-justify: inter-word;">Contributions:</p>
+                  <h3 class="text">Linguagem de Programação V</h3><br/><img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/V_Logo_SVG.svg/800px-V_Logo_SVG.svg.png"/>
+                  <p style="text-align: justify; text-justify: inter-word;">V é uma linguagem de programação simples, rápida, segura e compilada para o desenvolvimento de software de fácil manutenção.</p>
+                  <p style="text-align: justify; text-justify: inter-word;">Disponível em: <a href="https://github.com/vlang/v">V</a></p>
+                  <p style="text-align: justify; text-justify: inter-word;">Contribuições:</p>
                   <ul>
                     <li><a href="https://github.com/vlang/v/pull/20496">PR #20496</a></p>
                     <li><a href="https://github.com/vlang/v/pull/20525">PR #20525</a></p></li>
@@ -344,10 +346,10 @@
 
               <div class="project">
 
-                  <h3 class="text">Nanvix Operating System</h3><br/><img width="50" height="50" src="https://avatars.githubusercontent.com/u/26554886?s=280&v=4"/>
-                  <p style="text-align: justify; text-justify: inter-word;">Distributed OS for Lightweight Manycores.</p>
-                  <p style="text-align: justify; text-justify: inter-word;">Available in: <a href="https://github.com/nanvix/nanvix">Nanvix</a></p>
-                  <p style="text-align: justify; text-justify: inter-word;">Contributions:</p>
+                  <h3 class="text">Sistema Operacional Nanvix</h3><br/><img width="50" height="50" src="https://avatars.githubusercontent.com/u/26554886?s=280&v=4"/>
+                  <p style="text-align: justify; text-justify: inter-word;">Sistema Operacional Distribuído para Muitos Núcleos Leves</p>
+                  <p style="text-align: justify; text-justify: inter-word;">Disponível em: <a href="https://github.com/nanvix/nanvix">Nanvix</a></p>
+                  <p style="text-align: justify; text-justify: inter-word;">Contribuições:</p>
                   <ul>
                     <li><a href="https://github.com/nanvix/nanvix/pull/271">PR #271</a></p></li>
                     <li><a href="https://github.com/nanvix/nanvix/pull/272">PR #272</a></p></li>
@@ -356,69 +358,67 @@
 
               <div class="project">
 
-                  <h3 class="text">Lua Programming Language</h3><br/><img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/640px-Lua-Logo.svg.png"/>
-                  <p style="text-align: justify; text-justify: inter-word;">Distributed OS for Lightweight Manycores.</p>
-                  <p style="text-align: justify; text-justify: inter-word;">Contribution: <a href="https://github.com/viniciusfdasilva/lua/">Repository</a></p>
+                  <h3 class="text">Linguagem de Programação Lua</h3><br/><img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/640px-Lua-Logo.svg.png"/>
+                  <p style="text-align: justify; text-justify: inter-word;">Contribuição: <a href="https://github.com/viniciusfdasilva/lua/">Repositório</a></p>
               </div>
 
           </div>
 
           <div class="project">
-              <h3 class="text">Own projects</h3>
+              <h3 class="text">Meus projetos</h3>
               <br/><br/>
 
               <div class="project">
                 <h3 class="text">Danix Subsystem</h3>
                 <p style="text-align: justify; text-justify: inter-word;">
-                    Danix is an innovative system that provides an interface for managing lightweight Alpine environments, offering greater efficiency and resource savings. Danix's unique feature lies in using the host machine's own kernel, resulting in a lighter and more efficient approach that consumes only the necessary space for each environment's filesystem.
+                  Danix é um sistema inovador que fornece uma interface para gerenciar ambientes leves do Alpine, oferecendo maior eficiência e economia de recursos. A característica única do Danix reside no uso do próprio kernel da máquina hospedeira, resultando em uma abordagem mais leve e eficiente que consome apenas o espaço necessário para o sistema de arquivos de cada ambiente.
                 </p>
 
                 <p style="text-align: justify; text-justify: inter-word;">
-                    The main goal of Danix is to provide lightweight environments for simple tasks, eliminating the need to install compilers, interpreters, and other tools directly on the host operating system, such as git and editors. This approach brings noticeable benefits, such as agility in configuring environments for software development in various languages like Python, C/C++, Go, Rust, Java, Lua, among others.
+                  O objetivo principal do Danix é fornecer ambientes leves para tarefas simples, eliminando a necessidade de instalar compiladores, interpretadores e outras ferramentas diretamente no sistema operacional hospedeiro, como git e editores. Essa abordagem traz benefícios significativos, como agilidade na configuração de ambientes para desenvolvimento de software em várias linguagens, como Python, C/C++, Go, Rust, Java, Lua, entre outras.
                 </p>
 
                 <p style="text-align: justify; text-justify: inter-word;">
-                    By choosing Danix, users can create custom environments without the hassle of time-consuming and heavy installations, such as virtual machines and containers, especially for simpler projects. The idea is to simplify the development process, removing unnecessary barriers and allowing for a more agile and efficient approach.
-
+                  Ao escolher o Danix, os usuários podem criar ambientes personalizados sem o incômodo de instalações demoradas e pesadas, como máquinas virtuais e contêineres, especialmente para projetos mais simples. A ideia é simplificar o processo de desenvolvimento, removendo barreiras desnecessárias e permitindo uma abordagem mais ágil e eficiente.
                 </p>
 
                 <p style="text-align: justify; text-justify: inter-word;">
-                    In summary, Danix is the ideal choice for those seeking lightweight, customized, and efficient environments for software development, providing an innovative and streamlined alternative compared to more traditional, heavier options.
+                  Em resumo, o Danix é a escolha ideal para aqueles que buscam ambientes leves, personalizados e eficientes para o desenvolvimento de software, oferecendo uma alternativa inovadora e simplificada em comparação com opções mais tradicionais e pesadas.
                 </p>
 
                 <p style="text-align: justify; text-justify: inter-word;">
-                    • Repository: <a href="https://github.com/viniciusfdasilva/danixfs">https://github.com/viniciusfdasilva/danixfs<a>
+                    • Repositório: <a href="https://github.com/viniciusfdasilva/danixfs">https://github.com/viniciusfdasilva/danixfs<a>
                 </p>
 
                 <p style="text-align: justify; text-justify: inter-word;">
-                    • License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">https://www.gnu.org/licenses/gpl-3.0.html<a>
+                    • Licença: <a href="https://www.gnu.org/licenses/gpl-3.0.html">https://www.gnu.org/licenses/gpl-3.0.html<a>
                 </p>
               </div>
 
             <div class="project">
-              <h3 class="text">Vinux distro - GNU/Linux Operating System</h3>
+              <h3 class="text">Vinux distro - Sistema Operacional GNU/Linux</h3>
               <p style="text-align: justify; text-justify: inter-word;">
-                  Vinux stands out as a lightweight distribution that leverages the Linux kernel and busybox as its foundational building blocks. Specifically crafted to cater to embedded systems, Vinux addresses the needs of those requiring a secure, lightweight, and stable operating system with predefined packages.
+                O Vinux se destaca como uma distribuição leve que aproveita o kernel Linux e o BusyBox como seus blocos de construção fundamentais. Especificamente desenvolvido para atender a sistemas embarcados, o Vinux atende às necessidades daqueles que requerem um sistema operacional seguro, leve e estável com pacotes predefinidos.
               </p>
 
               <p style="text-align: justify; text-justify: inter-word;">
-                  Designed with a focus on embedded systems, Vinux provides a reliable platform that ensures both security and stability. By utilizing the Linux kernel and busybox, it achieves a nimble architecture, making it an ideal choice for environments where resource efficiency is crucial.
+                Projetado com foco em sistemas embarcados, o Vinux fornece uma plataforma confiável que garante segurança e estabilidade. Ao utilizar o kernel Linux e o busybox, ele alcança uma arquitetura ágil, tornando-o uma escolha ideal para ambientes onde a eficiência de recursos é crucial.
               </p>
 
               <p style="text-align: justify; text-justify: inter-word;">
-                  Furthermore, Vinux boasts a fixed set of packages, contributing to its stability and predictability. This characteristic is particularly advantageous for embedded systems, where maintaining a consistent and secure software environment is paramount.
+                Além disso, o Vinux possui um conjunto fixo de pacotes, contribuindo para sua estabilidade e previsibilidade. Essa característica é particularmente vantajosa para sistemas embarcados, onde manter um ambiente de software consistente e seguro é fundamental.
               </p>
 
               <p style="text-align: justify; text-justify: inter-word;">
-                  In essence, Vinux emerges as a specialized distribution, tailored to the demands of embedded systems, offering a secure, lightweight, and stable operating system with a carefully curated set of packages.
+                Em essência, o Vinux surge como uma distribuição especializada, adaptada às demandas de sistemas embarcados, oferecendo um sistema operacional seguro, leve e estável com um conjunto cuidadosamente selecionado de pacotes.
               </p>
 
               <p style="text-align: justify; text-justify: inter-word;">
-                  • Repository: <a href="https://github.com/viniciusfdasilva/vinux">https://github.com/viniciusfdasilva/vinux<a>
+                  • Repositório: <a href="https://github.com/viniciusfdasilva/vinux">https://github.com/viniciusfdasilva/vinux<a>
               </p>
 
               <p style="text-align: justify; text-justify: inter-word;">
-                  • License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">https://www.gnu.org/licenses/gpl-3.0.html<a>
+                  • Licença: <a href="https://www.gnu.org/licenses/gpl-3.0.html">https://www.gnu.org/licenses/gpl-3.0.html<a>
               </p>
             </div>
           </div>     
